@@ -1,11 +1,25 @@
-import Layout from '@/components/layout'
-import Header from '@/components/header'
-import Footer from '@/components/footer'
-import Container from '@/components/container'
-import FancyLink from '@/components/fancyLink'
+import Layout from 'components2/layout'
+import Header from 'components2/header'
+import Footer from 'components2/footer'
+import Container from 'components2/container'
+import FancyLink from 'components2/fancyLink'
 import { fade } from '@/helpers/transitions'
 import { LazyMotion, domAnimation, m } from 'framer-motion'
 import { NextSeo } from 'next-seo'
+import React from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
+import  j from "../public/stacks/javascript.svg"
+import  a from "../public/stacks/aws.svg"
+import  c from "../public/stacks/css.svg"
+import  f from "../public/stacks/figma.svg"
+import  g from "../public/stacks/git.svg"
+import  h from "../public/stacks/html.svg"
+import  mm from "../public/stacks/mongo.svg"
+import  r from "../public/stacks/react.svg"
+import  s from "../public/stacks/sass.svg"
+import  n from "../public/stacks/node.svg"
+import  t from "../public/stacks/tailwind.svg"
 
 export default function About() {
   return (
@@ -21,18 +35,152 @@ export default function About() {
           exit="exit"
           className="mb-12 md:mb-16 xl:mb-24"
         >
-          <Container>
+          
             <m.div variants={fade}>
-              <h1 className="font-bold text-2xl md:text-3xl xl:text-4xl mb-4">About Page</h1>
-              <div className="content max-w-3xl mb-4">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+            <>
+            <div class=' h-full w-full bg-texture   '>
 
-                <p>Velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              </div>
+                <div class='box-border mx-auto mt-28 flex flex-col  w-4/5 h-3/5 px-4   pb-24 m-auto p-0'>
+                    <h2 class='text-5xl font-semibold pt-2 '>About</h2>
+                    <div class="w-96 py-4 lg:text-6xl lg:mt-8 2xl:text-7xl indent-7  font-extrabold">
+
+                        <h3 class=' uppercase' data-aos="zoom-in-down" data-aos-duration="1500">“always be eager for new technologies.
+                            ”
+                        </h3>
+
+                    </div>
+
+                    <div class="  animate-spin  self-end w-48 2xl:w-60" data-aos="fade-up-left" data-aos-duration="1500">
+                        <Image class=''
+                            src="/circletext.f0059cc8.svg"
+                            alt='roundanimation'
+                            width={200}
+                            height={200}
+                        />
+
+                    </div>
+
+                    <div class=''>
+                        <h3 class='text-3xl lg:text-4xl 2xl:text-4xl 2xl:w-72 font-medium  uppercase text-gray-600 tracking-wider'>CREATING DIGITAL EXPERIENCES TO BRING PEOPLE TOGETHER.</h3>
+                    </div>
+                    <div class='lg:mt-8 2xl:mt-8 whitespace-normal'>
+                        <p class=' text-base font-semibold uppercase text-gray-600 tracking-wider'>I'm a driven person who works hard to attain my goals.The ability to overcome <br />
+                            obstacles and follow things through to completion has always been a strong point of mine,<br />
+                            which is why I've thrived in all the workplaces I have had the pleasure of working in.
+                        </p>
+                    </div>
+
+
+                    <div class='   relative  py-40 self-end' data-aos="fade-up-left" data-aos-duration="1500">
+                        <div class=" absolute -bottom-3 -left-96">
+
+                            <Image
+
+                                src='/desk.jpg'
+                                alt='citys'
+                                width={550}
+                                height={350}
+
+
+                            />
+                        </div>
+
+                        <div class=' '>
+
+                            <Image
+
+                                src='/desk2.jpg'
+                                alt='citys'
+                                width={500}
+                                height={550}
+
+
+                            />
+                        </div>
+
+                    </div>
+                    <div class=' pt-20  w-full  justify-around flex flex-col '>
+
+                        <h2 class='text-8xl lg:mx-0 lg:mt-6 lg:mb-2.5 py-40 font-extrabold pt-20 uppercase ' data-aos="zoom-in-down" data-aos-duration="1500">Skills</h2>
+
+                        <div class=' self-end box-border mb-28 w-full'>
+
+
+                            <div class="container  px-5 py-24 mx-auto lg:px-16">
+                            <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:py-16 lg:px-8">
+        <p class="text-center text-base font-semibold uppercase text-gray-600 tracking-wider">
+          My tech stacks & some tools I use in my work flow
+        </p>
+        <div class="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-8">
+          <div class="col-span-1 flex justify-center py-8 px-8 ">
+            <Image
+              class="max-h-4 filter grayscale "
+              src={j}
+              alt="Workcation"
+            />
+          </div>
+          <div class="col-span-1 flex justify-center py-8 px-8  ">
+            <Image class="max-h-4 filter grayscale " src={a} alt="Mirage" />
+          </div>
+          <div class="col-span-1 flex justify-center py-8 px-8 ">
+            <Image class="max-h-4 filter grayscale " src={s} alt="Tuple" />
+          </div>
+          <div class="col-span-1 flex justify-center py-8 px-8 ">
+            <Image class="max-h-4 filter grayscale " src={mm} alt="Laravel" />
+          </div>
+          <div class="col-span-1 flex justify-center py-8 px-8 ">
+            <Image
+              class="max-h-4 filter grayscale "
+              src={n}
+              alt="StaticKit"
+            />
+          </div>
+          <div class="col-span-1 flex justify-center py-8 px-8 ">
+            <Image
+              class="max-h-4 filter grayscale "
+              src={r}
+              alt="Statamic"
+            />
+          </div>
+          <div class="col-span-1 flex justify-center py-8 px-8 ">
+            <Image
+              class="max-h-4 filter grayscale "
+              src={g}
+              alt="Statamic"
+            />
+          </div>
+          <div class="col-span-1 flex justify-center py-8 px-8 ">
+            <Image
+              class="max-h-4 filter grayscale "
+              src={f}
+              alt="Statamic"
+            />
+          </div>
+          <div class="col-span-1 flex justify-center py-8 px-8 ">
+            <Image
+              class="max-h-4 filter grayscale "
+              src={c}
+              alt="Statamic"
+            />
+            
+          </div>
+        </div>
+      </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </>
               
               <FancyLink destination="/" a11yText="Navigate to the home page" label="Home Page" />
             </m.div>
-          </Container>
+         
         </m.div>
       </LazyMotion>
 
